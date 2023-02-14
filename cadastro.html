@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #00b0ff;
+        color: white;
+      }
+
+      .form-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #00b0ff;
+        max-width: 400px;
+        margin: 50px auto;
+      }
+
+      form {
+        text-align: center;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="password"],
+      input[type="date"],
+      select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border: 1px solid #00b0ff;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: #00b0ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0497D9;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px #00b0ff;
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    
+    <div class="form-container">
+      <form action="#">
+        <input type="text" placeholder="Nome" required />
+        <input type="text" placeholder="Sobrenome" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Telefone" required />
+        <input type="password" placeholder="Senha" required />
+        <input type="date" placeholder="Data de Nascimento" required />
+        <select required>
+          <option value="">Selecione o País</option>
+          <option value="brasil">Brasil</option>
+          <option value="argentina">Argentina</option>
+          <option value="eua">Estados Unidos</option>
+        </select>
+        <input type="text" placeholder="Cidade" required />
+        <input type="text" placeholder="Nicho em que empreende" required />
+        <input type="text" placeholder="Tempo empreendendo (em anos)" required />
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>

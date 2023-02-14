@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <style>
+      body {
+        background: linear-gradient(to right, #00b0ff, #0091ea);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      
+      .login-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      
+      input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      input[type="submit"] {
+        background-color: #00b0ff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      
+      .forgot-password {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #00b0ff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="title">
+        <img src="/grafico.png" alt="">
+      </div>
+      <form>
+        <input type="text" placeholder="Usuário">
+        <input type="password" placeholder="Senha">
+        <input type="submit" value="Entrar">
+        <a class="forgot-password">Esqueci a senha</a>
+      </form>
+    </div>
+  </body>
+</html>
